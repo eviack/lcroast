@@ -3,11 +3,9 @@ import scraplc as slc
 from lrextract import *
 import google.generativeai as genai
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
 
-genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
+genai.configure(api_key=st.secrets['GOOGLE_API_KEY'])
 
 lc = slc.LeetcodeScraper()
 
