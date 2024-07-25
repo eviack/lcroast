@@ -4,6 +4,14 @@ from lrextract import *
 import google.generativeai as genai
 import os
 
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+
 
 genai.configure(api_key=st.secrets['GOOGLE_API_KEY'])
 
