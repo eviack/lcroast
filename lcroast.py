@@ -46,7 +46,7 @@ def process_leetcode_username(user_name):
         st.caption("beta offend na ho jana lol")
         st.markdown(dispresp)
     except Exception as e:
-        st.error("Error fetching the data, check the username")
+        st.error(e)
 
     
 
