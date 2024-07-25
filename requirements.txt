@@ -1,4 +1,4 @@
-protobuf==3.20.5
+protobuf~=3.19.0
 requests==2.32.3
 streamlit==1.27.1
 google-generativeai
